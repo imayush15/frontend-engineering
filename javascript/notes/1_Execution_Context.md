@@ -1,0 +1,11 @@
+- Everything in Javascript runs inside Execution Context
+- Code in JS gets executed in two phases
+  - Memory allocation phase
+  - Code Execution Phase
+- Memory Allocation Phase
+  - In this phase JS controller skims through the code and assigns memory to the variables, along with a special keyword `undefined`
+  - Functions get allocated its entire body
+  - `let` and `const` variables are in Temporal Dead Zone (TDZ)
+- Code Execution Phase
+  - In this phase the JS controller actually runs the code and replaces the `undefined` values of the variables with the actual values that it has
+  - For any function execution, a new Execution Context is created for it with same memory allocation and code execution phases.
